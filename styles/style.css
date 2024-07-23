@@ -1,0 +1,42 @@
+#message-container {
+  position: relative;
+  height: 2em; /* Ajustez la hauteur si nécessaire */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  white-space: nowrap;
+  display: inline-block;
+  align-items: center;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Style pour le widget Tawk.to */
+#tawkchat-container {
+  bottom: 20px !important; /* Position du bas */
+  right: 20px !important;  /* Position de droite */
+  z-index: 9999 !important; /* Assurez-vous que le widget est au-dessus des autres éléments */
+}
+
+#tawkchat-container iframe {
+  border-radius: 10px !important; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Ombre */
+}

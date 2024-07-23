@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farlu Ci Diine Ji - Accueil</title>
+
+  <!-- Lien vers le favicon -->
+  <link rel="icon" type="image/png" href="./images/logo1.jpeg">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body class="bg-gray-100">
+  <!-- Top Bar -->
+  <div id="topbar" class="flex items-center bg-green-600 text-white w-full z-50">
+    <div class="container mx-auto flex justify-between p-2">
+      <div class="contact-info flex items-center">
+        <i class="fas fa-envelope mr-2"></i>
+        <a href="mailto:contact@associationreligieuse.com" class="text-white">contact@farlucidiineji.com</a>
+        <i class="fas fa-phone mx-3"></i> +221 33 835 0000
+      </div>
+      <div class="hidden lg:flex social-links items-center">
+        <a href="#" class="text-white mx-3"><i class="fab fa-facebook fa-1x"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-1x"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-1x"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-tiktok fa-1x"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-whatsapp fa-1x"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fas fa-linkedin fa-1x"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="bg-white shadow-md w-full z-50 fixed-top relative">
+    <div class="container mx-auto flex items-center py-4">
+      <a href="/" class="mr-auto">
+        <img src="./images/logo2.jpeg" alt="Logo de l'association" class="h-12">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul class="flex space-x-4">
+          <li><a class="text-gray-800 hover:text-green-600 font-bold" href="/">Accueil</a></li>
+          <li><a class="text-gray-800 hover:text-green-600 font-bold" href="/nav/Ouseyn.html">Qui est Baye Ousseynou Lahi</a></li>
+          <li><a class="text-gray-800 hover:text-green-600 font-bold" href="/nav/evenement.html">Événements</a></li>
+          <li><a class="text-gray-800 hover:text-green-600 font-bold" href="/nav/contact.html">Contact</a></li>
+        </ul>       
+      </nav>
+      <a href="#appointment" class="ml-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+        <span class="hidden md:inline">Make an</span> Appointment
+      </a>
+    </div>      
+  </header>
+  
+
+  <!-- Main Content -->
+  <div class="container mx-auto flex">
+    <!-- Sidebar -->
+<aside class="w-1/5 bg-white shadow-lg p-6">
+  <h2 class="text-3xl font-bold mb-6 text-gray-800">Menu</h2>
+  <ul class="space-y-4">
+    <li><a href="./menu/une.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">À la Une</a></li>
+    <li><a href="./menu/communiquer.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">Communiquer</a></li>
+    <li><a href="./menu/lesDernArt.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">Les Derniers Articles</a></li>
+    <li><a href="./menu/societe.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">Sociétés</a></li>
+    <li><a href="./menu/youtube.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">Vidéo YouTube</a></li>
+    <li><a href="./menu/editos.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">Nos Éditos</a></li>
+    <li><a href="./nav/evenement.html" class="block text-center bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition-colors duration-200">Les Événements</a></li>
+  </ul>
+</aside>
+
+
+    <!-- Main Section -->
+    <main class="flex-1 p-4">
+      <!-- Home Section -->
+    <section id="home" class="hero flex items-center justify-center" style="background: url('./images/Diamalaye-Mame-Seydi.jpg') no-repeat center center; background-size: cover; height: 15vh; margin-top: 5;">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold">Bienvenue dans notre Association</h1>
+        <h2 class="text-2xl mt-4">Nous sommes ici pour servir et unir notre communauté</h2>
+      </div>
+    </section>
+
+     <!-- Communiquer -->
+<section id="communiquer" class="mb-8">
+  <h2 class="text-1xl font-bold mb-4"></h2>
+  <div id="message-container" class="overflow-hidden relative h-16 bg-white">
+    <p id="message" class="text-gray-600 absolute top-0 left-0 w-full bg-white"></p>
+  </div>
+</section>
+
+      <!-- À la Une -->
+      <section id="alaune" class="mb-3">
+        <h2 class="text-2xl font-bold mb-2">À la Une</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./galeries/appel-2023.jpg.webp" alt="Actualité 1" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">143e édition de l’Appel des Layènes : Ce qui rend Seydina Limamou Lahi Al Mahdi si particulier</h3>
+            <p class="text-gray-600 mt-2">La communauté Layenne fête aujourd’hui l’appel à l’honneur de Seydina Limamou Laye. Une rencontre entre les fidèles pour rende hommage au grand érudit de l’islam. Cette année, les fidèles Layennes célèbrent la 143eme édition de l’appel du Mahdi.</p>
+            <a href="./une/143appel.html" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./galeries/litigefoncier.jpeg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Litige foncier : La communauté Layenne porte plainte</h3>
+            <p class="text-gray-600 mt-2">Les rideaux sont tombés sur le pèlerinage de Nguediaga, à Malika, deuxième plus grand évènement religieux de la communauté Layenne. Plusieurs milliers de pèlerins, tous de blanc vêtus, en provenance de divers horizons, ont pris part à la cérémonie religieuse.</p>
+            <a href="./une/litigef.html" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./galeries/moussagueye.png" alt="Actualité 3" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Nécrologie : La communauté Layenne en deuil (Photo)</h3>
+            <p class="text-gray-600 mt-2">La communauté Layenne en deuil. Serigne Moussa Guèye Laye n’est plus. Le porte-parole de la communauté Layenne a rendu l’âme ce mardi 16 mai ..</p>
+            <a href="https://www.senenews.com/actualites/societe/necrologie-societe/necrologie-la-communaute-layenne-en-deuil-photo_444847.html" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Les Derniers Articles -->
+      <section id="derniers-articles" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Les Derniers Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./galeries/nguediaga3.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Pèlerinage de Nguédiaga : Une tradition sacrée de la communauté layène</h3>
+            <p class="text-gray-600 mt-1"></p>
+            <a href="https://www.seneweb.com/news/International/pelerinage-de-nguediaga-une-tradition-sa_n_445768.html" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Article 2</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'article 2.</p>
+            <a href="#" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Article 2</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'article 2.</p>
+            <a href="#" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Article 2</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'article 2.</p>
+            <a href="#" class="text-green-600 mt-4 inline-block">Lire la suite</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sociétés -->
+      <section id="societes" class="mb-8">
+        <h2 class="text-2xl font-bold mb-3">Sociétés</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/societe-camb.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Cambérène : Nouveaux affrontements entre la population et les forces de l’ordre</h3>
+            <p class="text-gray-600 mt-2"></p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Société 2</h3>
+            <p class="text-gray-600 mt-2">Description de la société 2.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Société 2</h3>
+            <p class="text-gray-600 mt-2">Description de la société 2.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Société 2</h3>
+            <p class="text-gray-600 mt-2">Description de la société 2.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vidéo YouTube -->
+      <section id="video-youtube" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Vidéo YouTube</h2>
+        <div class="aspect-w-16 aspect-h-40">
+          <iframe src="https://www.youtube.com/embed/dWi2jbSueLc" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+        </div>
+      </section>
+
+      <!-- Nos Éditos -->
+      <section id="editos" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Nos Éditos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Édito 1</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'édito 1.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Édito 2</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'édito 2.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Édito 2</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'édito 2.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/actualite2.jpg" alt="Actualité 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Édito 2</h3>
+            <p class="text-gray-600 mt-2">Résumé de l'édito 2.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Les Événements -->
+      <section id="evenements" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Les Événements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/apl-jeun1.jpeg" alt="Appel de la Jeunesse" class="w-full h-48 object-cover rounded-lg mb-4">
+            <a href="evenements/apple2jeuness.html" class="text-xl font-bold text-gray-800">Cambérène: L’appel de la Jeunesse sera célébré ce 25 décembre</a>
+            <p class="text-gray-600 mt-2">Le 25 décembre prochain, la communauté layenne va célébrer la 30e édition de l’appel de la Jeunesse. C’est le rendez-vous annuel des jeunes, qui se tient à Cambérène. Le thème de cette année est: ‘Notre destinée est elle question de choix ou de circonstances ? » Libasse Colonel Diop, président de Farlu Ci Diine Ji Ansaarrrou […]
+              .</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/apl-jeun1.jpeg" alt="Appel de la Jeunesse" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Événement 2</h3>
+            <p class="text-gray-600 mt-2">Description de l'événement 2.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./images/apl-jeun1.jpeg" alt="Appel de la Jeunesse" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Événement 2</h3>
+            <p class="text-gray-600 mt-2">Description de l'événement 2.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-green-600 text-white py-4">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/3 mb-4">
+          <div class="footer-info">
+            <h3 class="text-lg font-semibold">Farlu Ci Diine Ji</h3>
+            <p>
+              Adresse : Quartier Kawsara Lahi<br>
+              Code Postal, Ville : Dakar<br><br>
+              <strong>Téléphone:</strong> +221 33 835 0000<br>
+              <strong>Email:</strong> contact@farlucidiineji.com<br>
+            </p>
+            <div class="md:w-1/3">
+              <h3 class="text-2xl font-bold mb-4">Suivez-nous</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-tiktok fa-2x"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white"><i class="fas fa-linkedin fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 mb-4">
+          <h3 class="text-3xl font-semibold mb-4">Contactez Nous</h3>
+          
+        </div>
+
+        <div class="w-full md:w-1/3 mb-4">
+          <h4 class="text-lg font-semibold">Notre Newsletter</h4>
+          <p>Inscrivez-vous pour recevoir les dernières nouvelles.</p>
+          <form action="https://outlook.live.com/mail/0/" method="post" class="flex">
+            <input type="email" name="email" class="border p-2 rounded-l-lg flex-1" placeholder="Votre email" required>
+            <input type="submit" value="S'inscrire" class="bg-yellow-500 text-white p-2 rounded-r-lg">
+          </form>
+        </div>       
+      </div>
+    </div>
+    <div class="container mx-auto text-center">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Farlu Ci Diine Ji</span></strong>. Tous droits réservés
+      </div>
+      <div class="credits">
+        Designed by <a href="#" class="text-white hover:underline">Mame Libasse Dia</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top flex items-center justify-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!--communiquer-js-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const messages = [
+      "La communauté Layenne en deuil. Serigne Moussa Guèye Laye n’est plus. Le porte-parole de la communauté Layenne a rendu l’âme ce mardi 16 mai ..",
+        "On a reunion demain a la maison baye Ousseynou Lahi.",
+        "Prochaine reunion le vendredi a 17h.",
+        "Nouvelle directive du Khalife à suivre."
+      ];
+  
+      let currentMessageIndex = 0;
+      const messageElement = document.getElementById('message');
+  
+      function updateMessage() {
+        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+        messageElement.style.transform = 'translateY(100%)';
+        setTimeout(() => {
+          messageElement.textContent = messages[currentMessageIndex];
+          messageElement.style.transform = 'translateY(0)';
+        }, 500); // Adjust delay for smooth transition
+      }
+  
+      setInterval(updateMessage, 5000); // Change message every 5 seconds
+    });
+  </script>
+
+ <!-- Tawk.to Chatbot Script -->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function() {
+      var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+  })();
+  </script>
+    
+</body>
+
+</html>
